@@ -64,15 +64,14 @@
 		<h1>Select your game</h1>
 	</div>
 	<div data-role="content">	
-		<center><a href="#" id="buttonbolly" data-role="button">Bollywood</a></center>
-        <center><a href="#" id="buttonholly" data-role="button">Hollywood</a></center>
+		<center><a href="#main" id="buttonbolly" data-role="button">Bollywood</a></center>
+        <center><a href="#main" id="buttonholly" data-role="button">Hollywood</a></center>
 	</div>
 </div>
 <div data-role="page" id="main">
-<div data-role="header">
+<div id="popupmain" data-role="popup" data-theme="a" data-position-to="window">
 </div>
 <div data-role="content">
-
 </div>
 </div>
 </body>
@@ -113,6 +112,17 @@ $("#buttonplayer2").click(function(e) {
 	{
 		$.mobile.navigate("#start");
 	}
+});
+$("#main").live('pageshow',function(){
+	if(play1==1)
+	{
+		$("#popupmain").html("<h3>"+nameplayer1+"</h3><input type='password' id='passwordinput1' name='passwordinput1' placeholder='Password'>");
+	}
+	else if(play2==1)
+	{
+		$("#popupmain").html("<h3>"+nameplayer2+"</h3>");
+	}
+	$("#popupmain").popup("open");
 });
 </script>
 </html>
