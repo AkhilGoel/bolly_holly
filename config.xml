@@ -7,7 +7,8 @@
 <description>
 A traditional bollywood hollywood game at the android platform.
 </description>
-
+<icon src="icon.png">
+<gap:splash src="splash.png">
 <author href="https://justff.tk" email="akhil@justff.tk">
 Akhil Goel
 </author>
