@@ -7,13 +7,11 @@
 <description>
 A traditional bollywood hollywood game at the android platform.
 </description>
-<platform name="android">
-              <icon src="icon.png" density="ldpi" />
-              <icon src="icon.png" density="mdpi" />
-              <icon src="icon.png" density="hdpi" />
-              <icon src="icon.png" density="xhdpi" />
-     </platform>
-	 
+<icon src="icon.png" gap:platform="android" gap:density="ldpi" />
+<icon src="icon.png" gap:platform="android" gap:density="mdpi" />
+<icon src="icon.png" gap:platform="android" gap:density="hdpi" />
+<icon src="icon.png" gap:platform="android" gap:density="xhdpi" />
+<icon src="icon.png" gap:platform="android" gap:density="xxhdpi" />
 <gap:splash src="splash.png">
 <author href="https://justff.tk" email="akhil@justff.tk">
 Akhil Goel
