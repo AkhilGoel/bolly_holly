@@ -70,6 +70,17 @@
 </div>
 <div data-role="page" id="main">
 <div id="popupmain" data-role="popup" data-theme="a" data-position-to="window">
+<div id="mainheader" data-role="header">
+<a href="#start" data-role="button">Exit</a>
+<div id="mainname"></div>
+</div>
+<div data-role="content">
+  <div data-role="fieldcontain">
+    <label for="passwordinput">Enter password:</label>
+    <input type="password" name="passwordinput" id="passwordinput" value=""  />
+  </div>
+  </div>
+
 </div>
 <div data-role="content">
 </div>
@@ -116,11 +127,9 @@ $("#buttonplayer2").click(function(e) {
 $("#main").live('pageshow',function(){
 	if(play1==1)
 	{
-		$("#popupmain").html("<h3>"+nameplayer1+"</h3><input type='password' id='passwordinput1' name='passwordinput1' placeholder='Password'>");
 	}
 	else if(play2==1)
 	{
-		$("#popupmain").html("<h3>"+nameplayer2+"</h3>");
 	}
 	$("#popupmain").popup("open");
 });
